@@ -420,7 +420,11 @@ i{
 	}
 
 		.b-services__item{
-			float: left;
+			display: inline-block;
+			zoom: 1;
+			/*for ie7*/
+        	*display: inline;
+			vertical-align: top;
 		}
 
 		.b-services__item_3{
@@ -430,10 +434,9 @@ i{
 
 		.b-services__item_2{
 			min-height: 150px;
-			width: 45%;
+			width: 43%;
 			margin: 0 20px 0 0;
 			padding: 16px 14px 19px;
-			vertical-align: top;
 			border: 1px solid #fff;
 		}
 			.b-services__item_2:nth-child(2n+1){
@@ -468,8 +471,12 @@ i{
 	width: 138px;
 }
 .b-services__content{
-	padding: 0 0 0 170px;
+	/*padding: 0 0 0 170px;*/
 }
+	.b-services__item-desc{
+		text-align: justify;
+	}
+
 /*end catalog product*/
 
 /*price product*/
