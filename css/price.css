@@ -1,0 +1,33 @@
+/* style for price.html*/
+.b-table-price{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	.title_center{
+		text-align: center;
+	}
+
+	.title_left{
+		text-align: left;
+	}
+	
+	.b-table-price tr:nth-child(even) td {
+    	background: #eff5f7;
+	}
+
+	.b-price-list th,
+	.b-price-list td{
+		padding: 7px;
+	}
+
+	.b-table-price th{
+		background: #e65100;
+		color: #fff;
+	}
+
+	.title_centerzag{
+		height: 40px;
+		font-size: 18px;
+		font-weight: 900;
+	}
