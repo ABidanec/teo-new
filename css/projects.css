@@ -1,0 +1,49 @@
+/*the style for projects.html*/
+
+.b-projects__list{
+	padding: 0;
+	margin: 0;
+}
+
+.b-projects__item{
+	list-style: none;
+	clear: both;
+	margin: 0 0 6% 0;
+}
+
+	.b-projects__img-wr{
+		float: left;
+		width: 30%;
+		padding: 1% 0 0 0;
+	}
+		.b-projects__img{
+			max-width: 95%;
+			height: auto;
+		}
+
+	.b-projects__desc{
+		padding: 0 0 0 33%;
+	}
+		.b-projects__desc p{
+			font-size: 14px;
+		}
+
+		.b-project__name a{
+			text-decoration: none;
+			color: #e65100;
+		}
+			.b-project__name a:hover{
+				color: #000;
+			}
+
+		.b-project__button{
+			border-radius: 3px;
+			background: #e65100;
+			text-decoration: none;
+			color: #fff;
+			font-weight: 700;
+		}
+			.b-project__button:hover{
+				background: #fff;
+				color: #e65100;
+			}

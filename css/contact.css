@@ -1,0 +1,240 @@
+/* the sthyle for contact.html */
+
+.b-contact__slogan{
+	font-weight: 700;
+	font-size: 3em;
+	line-height: 1.5em;
+	margin: 0 0 20px 0;
+}
+
+.b-contact__left{
+	float: left;
+	width: 27%;
+	padding: 0 3% 0 0;
+}
+
+	.b-conatct__desc{
+		margin: 0 0 30px 0;
+	}
+		.b-conatct__desc p{
+			margin: 0 0 1em 0;
+		}
+
+	.b-contact__list{
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+		.b-contact__item{
+			position: relative;
+			clear: both;
+			margin: 0 0 30px 0;
+		}
+			.b-contact__marker{
+				display: block;
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background: #e65100;
+				font-family: 'FontAwesome';
+				color: #fff;
+				font-size: 24px;
+			}
+
+
+				.b-contact__marker_map:before{
+					position: absolute;
+					top: 30%;
+					left: 36%;
+					content: "\f041";
+				}
+
+				.b-contact__marker_phone:before{
+					position: absolute;
+					top: 30%;
+					left: 30%;
+					content: "\f095";
+				}
+
+				.b-contact__marker_email:before{
+					position: absolute;
+					top: 28%;
+					left: 25%;
+					content: "\f0e0";
+				}
+
+				.b-contact__marker__clock:before{
+					position: absolute;
+					top: 29%;
+					left: 29%;
+					content: "\f017";
+				}
+
+			.b-contact__text{
+				float: right;
+				width: 80%;
+			}
+				.b-contact__text h4{
+					color: #222;
+				    font-size: 15px;
+				    line-height: 20px;
+				    margin: 0;
+				    padding: 0 0 5px 0;
+				}
+
+				.b-contact__text span{
+					font-size: 15px;
+				}
+
+.b-contact__right{
+	float: left;
+	width: 68%;
+	height: auto;
+	padding: 0 0 5% 2%;
+}
+
+.l-gray-bg {
+	background: #eef2f4;
+	margin: 0;
+}
+
+/*b-form*/
+.l-form__left,
+.l-form__right{
+	float: left;
+	width: 48%;
+}
+
+.l-form__left{
+	padding: 0 2% 0 0;
+}
+
+.l-form__right{
+	padding: 0 0 0 2%;
+}
+	
+	.l-form__label{
+		display: block;
+		position: relative;
+	}
+
+	.l-form__input,
+	.l-form__right textarea{
+		
+		width: 90%;
+		border-radius: 2px;
+	    box-shadow: none;
+	    border: 1px solid #d7dee3;
+	    height: 26px;
+	    padding: 3px 20px 3px 6px;
+	    margin: 2% 0;
+	}
+
+	.l-form__right textarea{
+		min-height: 229px;
+	}
+	
+	.b-form__marker{ 
+		position: absolute;
+		font-family: 'FontAwesome';
+		font-size: 17px;
+		color: #c4ccd1;
+	}
+
+	.b-form__marker_name{
+		top: 32px;
+		right: 14px;
+	}
+		.b-form__marker_name:after{
+			content: "\f007";
+		}
+	.b-form__marker_phone{
+		top: 34px;
+		right: 13px;
+	}
+		.b-form__marker_phone:after{
+			content: "\f095";	
+		}
+	.b-form__marker_email{
+		top: 33px;
+		right: 12px;
+	}
+		.b-form__marker_email:after{
+			content: "\f0e0";
+		}
+	.b-form__marker_message{
+		top: 28px;
+		right: 10px;
+	}
+		.b-form__marker_message:after{
+			content: "\f040";
+		}
+
+
+.l-form__bottom{
+	display: block;
+	clear: left;
+}
+
+
+
+.l-form__bottom-top{
+	padding: 20px 0;
+
+}
+	.l-captcha__wr{
+		float: left;
+		width: 25%;
+		height: 40px;
+	}
+		.b-capthca__img{
+			width: 98%;
+		}
+
+	.l-refresh-cap__wr{
+		float: left;
+		width: 35%;
+		height: 34px;
+		padding: 0.5% 0 0 2%;
+	}
+		.b-refresh-cap__link{
+			text-decoration: none;
+			border-bottom: 1px dotted;
+		    font-size: 12px;
+		    line-height: 14px;
+		    color: #e65100;
+		}
+			.b-refresh-cap__link:hover{
+				color: #000;
+			}
+
+	.l-form__input_captcha{
+		float: left;
+		width: 35%;
+		margin: 0;
+		padding: 3px 6px;
+	}
+
+	.b-marker-field{
+		float: left;
+		width: 70%;
+		height: 34px;
+	}
+
+	.l-form__send{
+		float: right;
+		margin: 0 7px 0 0;
+		background: #e65100;
+		color: #fff;
+		font-weight: 700;
+	}
+		.l-form__send:hover{
+			color: #e65100;
+			background: #fff;
+
+		}
+
+/*end b-form*/
+
