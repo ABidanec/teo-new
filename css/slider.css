@@ -1,16 +1,35 @@
 /*slider*/
 .b-top-slider{
-	background: url("../pic/slider/slid1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 400px;
 }
 	.b-top-slider__list{
-		list-style: none;
+    	list-style: none;
+        height: 100%;   
+        margin: 0;
+        padding: 0;
 	}
+        
 		.b-top-slider__item{
-
+            
+            background-repeat: no-repeat;
+	        background-size: cover;
+            height: 100%;    
 		}
+            .b-top-slider__item_1{
+                background: url("../pic/slider/slid1.jpg");
+            }
+
+            .b-top-slider__item_2{
+                background: url("../pic/slider/slid2.jpg");
+            }
+            
+            .b-top-slider__item_3{
+                background: url("../pic/slider/slid3.jpg");
+            }
+            
+            .b-top-slider__item_4{
+                background: url("../pic/slider/slid3.jpg");
+            }
 
 			.b-top-slider__head,
 			.b-top-slider__desc{

@@ -154,8 +154,8 @@ i{
 
 				.b-header-contact__email:before{
 					content: "\f0e0";
-					top: 3px;
-					left: 5px;
+					top: 2px;
+					left: 6px;
 				}
 
 				.b-header-contact__phone:before{
