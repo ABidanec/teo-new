@@ -1,7 +1,31 @@
 $(document).ready(function(){
 
 	moduleScrollToTop.init();
-
+    
+    $('.b-top-slider__list').slick({
+        autoplay: true, // авто прокрутка
+  	    autoplaySpeed : 3000, // скорость прокрутки
+        dots : true, // навигация по точкам
+        arrows : true // включение/отключение кнопок навигации
+    });
+    
+    $('.b-product__list').slick({
+        autoplay: true, // авто прокрутка
+  	    autoplaySpeed : 2000, // скорость прокрутки
+        dots : true, // навигация по точкам
+        slidesToShow: 4, // количество отображаемых слайдов
+        slidesToScroll: 1, // количетсво проуручеваемых слайдов
+         arrows : true // включение/отключение кнопок навигации
+    });
+    
+    $('.b-slider-brend__list').slick({
+        autoplay: true, // авто прокрутка
+  	    autoplaySpeed : 2000, // скорость прокрутки
+        slidesToShow: 5, // количество отображаемых слайдов
+        slidesToScroll: 1, // количетсво проуручеваемых слайдов
+        dots : true, // навигация по точкам
+        arrows : false // включение/отключение кнопок навигации
+    });
 });
 
 
@@ -39,5 +63,7 @@ var moduleScrollToTop = (function(){
 
 // module slider
 var moduleSlider = (function(){
-	
+	var 
+		slider = $(".b-top-slider"),
+		sliderList = slider.children()
 })();

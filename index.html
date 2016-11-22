@@ -31,7 +31,11 @@
 	<link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
+<!--	slider -->
 	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
+<!--	end slider -->
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -106,10 +110,10 @@
 			<!-- l-center -->
 		</header>
 		<!-- b-header -->
-		<section class="b-top-slider clearfix">
+		<section class="b-top-slider">
 			<div class="l-center">
 				<ul class="b-top-slider__list">
-					<li class="b-top-slider__item">
+					<li class="b-top-slider__item clearfix">
 						<div class="b-top-slider__content">
 							<h3 class="b-top-slider__head">Адаптация под фирменный стиль</h3>
 							<div class="b-top-slider__desc">
@@ -121,30 +125,44 @@
 							</div>
 						</div>
 					</li>
-					<!-- <li class="b-top-slider__item">
+				    <li class="b-top-slider__item clearfix">
 						<div class="b-top-slider__content">
 							<h3 class="b-top-slider__head">Корпоративный сайт для всех</h3>
 							<div class="b-top-slider__desc">
 								<p>Готовое решение для юридических лиц и индивидуальных предпринимателей для быстрого создания сайта.</p>
 							</div>
 							<div class="b-top-slider__buttons">
-								<button class="b-top-slider__button">Узнать больше</button>
-								<button class="b-top-slider__button  b-top-slider__button_invers">Заказать</button>
+								<button class="b-big-button">Узнать больше</button>
+								<button class="b-big-button b-big-button_invers">Заказать</button>
 							</div>
 						</div>
-					</li> -->
+					</li> 
+					<li class="b-top-slider__item clearfix">
+						<div class="b-top-slider__content">
+							<h3 class="b-top-slider__head">Корпоративный сайт для всех</h3>
+							<div class="b-top-slider__desc">
+								<p>Готовое решение для юридических лиц и индивидуальных предпринимателей для быстрого создания сайта.</p>
+							</div>
+							<div class="b-top-slider__buttons">
+								<button class="b-big-button">Узнать больше</button>
+								<button class="b-big-button b-big-button_invers">Заказать</button>
+							</div>
+						</div>
+					</li> 
+					<li class="b-top-slider__item clearfix">
+						<div class="b-top-slider__content">
+							<h3 class="b-top-slider__head">Корпоративный сайт для всех</h3>
+							<div class="b-top-slider__desc">
+								<p>Готовое решение для юридических лиц и индивидуальных предпринимателей для быстрого создания сайта.</p>
+							</div>
+							<div class="b-top-slider__buttons">
+								<button class="b-big-button">Узнать больше</button>
+								<button class="b-big-button b-big-button_invers">Заказать</button>
+							</div>
+						</div>
+					</li> 
 				</ul>
-				<!-- <ul class="b-top-slider__service-list">
-					<li class="b-top-slider__service-item"></li>
-					<li class="b-top-slider__service-item"></li>
-				</ul> -->
-				<div class="l-top-slider-navi">
-					<ul class="b-top-slider-navi__list">
-						<li class="b-top-slider-navi__item b-top-slider-navi__item_active"><a href="" class="b-top-slider-navi__link">&nbsp;</a></li>
-						<li class="b-top-slider-navi__item"><a href="" class="b-top-slider-navi__link">&nbsp;</a></li>
-						<li class="b-top-slider-navi__item"><a href="" class="b-top-slider-navi__link">&nbsp;</a></li>
-					</ul>
-				</div>
+                <!-- b-top-slider__list-->
 			</div>
 			<!-- l-center-top-slider -->
 		</section>
@@ -351,18 +369,40 @@
 						<div class="b-product__price">23 000 грн.</div>
 						<div class="b-product__old-price">26 900 грн.</div>
 					</li>
+					<li class="b-product__item">
+						<img src="pic/price/product4.jpg" alt="product4" class="b-product__img">
+						<a href="/" class="b-product__link">Оконные системы INTELIO</a>
+						<div class="b-product__desc">Авторские магниты</div>
+						<div class="b-product_options">
+							<div class="b-product__stock">в наличии</div>
+							<div class="b-product__article">Артикул: 2334556</div>
+						</div>
+						<div class="b-product__price">23 000 грн.</div>
+						<div class="b-product__old-price">26 900 грн.</div>
+					</li>
+					<li class="b-product__item">
+						<img src="pic/price/product4.jpg" alt="product4" class="b-product__img">
+						<a href="/" class="b-product__link">Оконные системы INTELIO</a>
+						<div class="b-product__desc">Авторские магниты</div>
+						<div class="b-product_options">
+							<div class="b-product__stock">в наличии</div>
+							<div class="b-product__article">Артикул: 2334556</div>
+						</div>
+						<div class="b-product__price">23 000 грн.</div>
+						<div class="b-product__old-price">26 900 грн.</div>
+					</li>
+					<li class="b-product__item">
+						<img src="pic/price/product4.jpg" alt="product4" class="b-product__img">
+						<a href="/" class="b-product__link">Оконные системы INTELIO</a>
+						<div class="b-product__desc">Авторские магниты</div>
+						<div class="b-product_options">
+							<div class="b-product__stock">в наличии</div>
+							<div class="b-product__article">Артикул: 2334556</div>
+						</div>
+						<div class="b-product__price">23 000 грн.</div>
+						<div class="b-product__old-price">26 900 грн.</div>
+					</li>
 				</ul>
-				<div class="l-product-navi">
-					<ul class="b-product-navi__list">
-						<li class="b-product-navi__item b-product-navi__item_active"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-						<li class="b-product-navi__item"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-						<li class="b-product-navi__item"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-					</ul>
-					<ul class="b-product-navi-but__list">
-						<li class="b-product-navi-but__item "><a href="" class="b-product-navi-but__link b-product-navi-but__link_prev">&nbsp;</a></li>
-						<li class="b-product-navi-but__item "><a href="" class="b-product-navi-but__link b-product-navi-but__link_next">&nbsp;</a></li>
-					</ul>
-				</div>
 			</div>
 		</section>
 		<!-- b-services -->
@@ -414,14 +454,12 @@
 					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand3.png" alt="brand3" class="b-slider-brend__img"></a></li>
 					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand4.jpg" alt="brand4" class="b-slider-brend__img"></a></li>
 					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand5.png" alt="brand4" class="b-slider-brend__img"></a></li>
+					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand1.png" alt="brand1" class="b-slider-brend__img"></a></li>
+					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand2.png" alt="brand2" class="b-slider-brend__img"></a></li>
+					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand3.png" alt="brand3" class="b-slider-brend__img"></a></li>
+					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand4.jpg" alt="brand4" class="b-slider-brend__img"></a></li>
+					<li class="b-slider-brend__item"><a href="/" class="b-slider-brend__link"><img src="pic/brand/brand5.png" alt="brand4" class="b-slider-brend__img"></a></li>
 				</ul>
-				<div class="b-slider-brend__navi-list">
-					<ul class="b-product-navi__list">
-						<li class="b-product-navi__item b-product-navi__item_active"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-						<li class="b-product-navi__item"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-						<li class="b-product-navi__item"><a href="" class="b-product-navi__link">&nbsp;</a></li>
-					</ul>
-				</div>
 			</div>
 		</section>
 		<!-- b-slider-brend -->
@@ -480,6 +518,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="app/bower/jquery/jquery.js"><\/script>')
 </script>
+<script src="js/slick/slick.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
