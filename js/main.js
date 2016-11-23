@@ -26,6 +26,8 @@ $(document).ready(function(){
         dots : true, // навигация по точкам
         arrows : false // включение/отключение кнопок навигации
     });
+    
+    $(".b-top-menu__list").slicknav();
 });
 
 

@@ -254,6 +254,24 @@ i{
 						top: 0;
 						margin: 0 0 0 200px;
 					}	
+/*slick menu style*/
+
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	.js .b-top-menu__list {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+/*end slick menu style*/
+
 /*end top-menu*/
 
 /*search*/
