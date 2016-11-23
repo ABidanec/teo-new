@@ -3,6 +3,7 @@
 	height: 400px;
 }
 	.b-top-slider__list{
+        
     	list-style: none;
         height: 100%;   
         margin: 0;
@@ -10,10 +11,10 @@
 	}
         
 		.b-top-slider__item{
-            
+            display: block;
             background-repeat: no-repeat;
 	        background-size: cover;
-            height: 100%;    
+            height: 400px;  
 		}
             .b-top-slider__item_1{
                 background: url("../pic/slider/slid1.jpg");
