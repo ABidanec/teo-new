@@ -80,9 +80,9 @@
 					<nav class="b-top-menu">
 						<ul class="b-top-menu__list">
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Компания</a></li>
-							<li class="b-top-menu__item">Каталог
+                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Каталог</a>
 								<ul class="b-sub-top-menu__list">
-									<li class="b-sub-top-menu__item">Категория1
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
 										<ul class="b-sub-top-menu__list_child">
 											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
 											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
@@ -95,7 +95,22 @@
 									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория4</a></li>
 								</ul>
 							</li>
-							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Услуги</a></li>
+							<li class="b-top-menu__item">
+                                <a href="/" class="b-top-menu__link">Услуги</a>
+							    <ul class="b-sub-top-menu__list">
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
+										<ul class="b-sub-top-menu__list_child">
+											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
+											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
+											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
+											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+										</ul>
+									</li>
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория2</a></li>
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория3</a></li>
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория4</a></li>
+								</ul>
+							</li>
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Курсы</a></li>
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Проекты</a></li>
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Информация</a></li>
@@ -111,6 +126,15 @@
 				<!-- l-middle-header -->
 			</div>
 			<!-- l-center -->
+			<div class="b-search clearfix">
+                <div class="l-center">
+                    <form action="" class="b-search__form">
+                        <input type="text" class="b-search__input_text" placeholder="Запрос поиска...">
+                        <input type="submit" class="b-search__input_sub" value="Найти">
+                    </form>
+                    <a href="" class="b-search__close"></a>
+                </div>
+			</div>
 		</header>
 		<!-- b-header -->
 		<section class="b-top-slider">
@@ -524,9 +548,12 @@
 	</div>
 	<!-- b-scroll -->
 <!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+<!--
 <script>window.jQuery || document.write('<script src="app/bower/jquery/jquery.js"><\/script>')
 </script>
+-->
+<script src="js/jquery-2.1.4.js"></script>
 <script src="js/slick/slick.js"></script>
 <script src="js/slickMenu/jquery.slicknav.min.js"></script>
 <script src="js/main.js"></script>

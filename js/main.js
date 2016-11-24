@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	moduleScrollToTop.init();
+//    sliders
     
     $('.b-top-slider__list').slick({
         autoplay: true, // авто прокрутка
@@ -26,8 +26,20 @@ $(document).ready(function(){
         dots : true, // навигация по точкам
         arrows : false // включение/отключение кнопок навигации
     });
+//  end  sliders  
     
-    $(".b-top-menu__list").slicknav();
+// top menu
+    moduleMenu.init($(".b-top-menu__list"));  
+// end top menu
+    
+//    scroll to top
+	moduleScrollToTop.init();
+//    end scroll to top
+    
+//    search
+    moduleSearch.init();
+//    end search
+
 });
 
 
@@ -63,9 +75,60 @@ var moduleScrollToTop = (function(){
 
 })();
 
-// module slider
-var moduleSlider = (function(){
-	var 
-		slider = $(".b-top-slider"),
-		sliderList = slider.children()
+// module menu
+var moduleMenu = (function(){
+    
+    /**
+    метод маркирует элементы у которых есть вложенные списки
+    на любую глубину.
+    В метод передается JQuery переменная корневого элемента меню
+    */
+    var isSubMenuItem = function(menu){
+        var 
+        item = menu.children("li"),
+        itemQuality = item.length;
+        
+        for(var i=0; i<itemQuality; i+=1){
+            var 
+                it = $(item[i]),
+                temp = it.children("ul");
+            
+            if(temp.length != 0){
+                it.addClass('b-top-menu__item_child');
+                isSubMenuItem($(temp));
+            }
+        }
+    };
+    
+    return {
+        init: function(menu){
+            menu.slicknav();
+            isSubMenuItem(menu);
+           
+        },
+        
+    }
+})();
+
+// module search
+var moduleSearch = (function(){
+    return{
+        init: function(){
+            
+           $(".b-top-search__button").on("click", function(e){
+                e.preventDefault();
+               $(".b-search").css({"display" : "block"});
+           });
+            
+           $(".b-search__close").on("click", function(e){
+               e.preventDefault();
+               $(".b-search").css({"display" : "none"});
+           });
+           
+           $(".b-search__form").on("submit", function(){
+               $(".b-search").css({"display" : "none"});
+           })
+        }
+    } 
+        
 })();
