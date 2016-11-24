@@ -40,6 +40,9 @@ $(document).ready(function(){
     moduleSearch.init();
 //    end search
 
+//    contact
+    moduleContactValidation.init();
+//    end contact
 });
 
 
@@ -76,6 +79,9 @@ var moduleScrollToTop = (function(){
 })();
 
 // module menu
+/**
+модуль управлением верхнего меню
+*/
 var moduleMenu = (function(){
     
     /**
@@ -111,6 +117,9 @@ var moduleMenu = (function(){
 })();
 
 // module search
+/**
+модуль открытия/закртытия блока поиска в шапке
+*/
 var moduleSearch = (function(){
     return{
         init: function(){
@@ -131,4 +140,16 @@ var moduleSearch = (function(){
         }
     } 
         
+})();
+
+// module contact validation
+/**
+модуль валидации формы контактов
+*/
+var moduleContactValidation = (function(){
+    var 
+        form = $(".b-form"),
+        name = $(".l-form__input[name='name']"),
+        phone = $(".l-form__input[name='phone']"),
+        textarea = $(".b-form__textarea");
 })();
