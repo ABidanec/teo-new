@@ -199,6 +199,9 @@ i{
                         color: #e65100;
                     }
                     .b-top-menu__item_child:after{
+                        position: absolute;
+                        right: 3px;
+                        top: 0%;
 						font-family: "FontAwesome";
 						margin: 0 0 0 3px;
 						content: "\f107";
@@ -231,15 +234,24 @@ i{
 			}
 				
 				.b-sub-top-menu__item{
+                    position: relative;
 					border-right: 1px solid #FF8A39;
                     color: #fff;
 				}
+                     .b-sub-top-menu__item_child:after{
+                        position: absolute;
+                        right: 4px;
+                        top: 25%;
+						font-family: "FontAwesome";
+						margin: 0 0 0 3px;
+						content: "\f054";
+                         font-size: 100;
+					}
 
 					.b-sub-top-menu__item:hover,
 					.b-sub-top-menu__item_child:hover{
 						background: #A33900;
 					}
-
 
 					.b-top-menu__item:hover .b-sub-top-menu__list{
 						display: block;

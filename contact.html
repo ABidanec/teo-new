@@ -77,21 +77,45 @@
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Каталог</a>
 								<ul class="b-sub-top-menu__list">
 									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
-										<ul class="b-sub-top-menu__list_child">
-											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
-											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
-											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
-											<li class="b-sub-top-menu__item_child"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+										<ul class="b-sub-top-menu__list">
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+										</ul>
+									</li>
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория2</a></li>
+									<li class="b-sub-top-menu__item">
+									    <a href="" class="b-sub-top-menu__link">Категория3</a>
+									    <ul class="b-sub-top-menu__list">
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+										</ul>
+									</li>
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория4</a></li>
+								</ul>
+							</li>
+							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Услуги</a></li>
+							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Курсы</a></li>
+							<li class="b-top-menu__item">
+							    <a href="/" class="b-top-menu__link">Проекты</a>
+							    
+							    <ul class="b-sub-top-menu__list">
+									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
+										<ul class="b-sub-top-menu__list">
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
+											<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
 										</ul>
 									</li>
 									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория2</a></li>
 									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория3</a></li>
 									<li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория4</a></li>
 								</ul>
-							</li>
-							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Услуги</a></li>
-							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Курсы</a></li>
-							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Проекты</a></li>
+							    </li>
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Информация</a></li>
 							<li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Контакты</a></li>
 						</ul>
@@ -194,18 +218,18 @@
 								<i class="b-form__marker b-form__marker_phone"></i>
 							</label>
 							<label class="l-form__label">
-								E-mail:
+								E-mail: <span>*</span>
 								<input type="text" name="email" class="l-form__input">
 								<i class="b-form__marker b-form__marker_email"></i>
 							</label>
 							<label class="l-form__label">
-								Интересующий товар/услуга:
+								Интересующий товар/услуга: <span>*</span>
 								<input type="text" name="service" class="l-form__input">
 							</label>
 						</div>
 						<div class="l-form__right">
 							<label class="l-form__label">
-								Сообщение: *
+								Сообщение: <span>*</span>
 								<textarea name="message" cols="30" rows="10" class="b-form__textarea"></textarea>
 								<i class="b-form__marker b-form__marker_message"></i>
 							</label>
@@ -285,6 +309,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="app/bower/jquery/jquery.js"><\/script>')
 </script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/slick/slick.js"></script>
+<script src="js/slickMenu/jquery.slicknav.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

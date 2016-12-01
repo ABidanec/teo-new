@@ -100,7 +100,13 @@ var moduleMenu = (function(){
                 temp = it.children("ul");
             
             if(temp.length != 0){
-                it.addClass('b-top-menu__item_child');
+                
+                if(it.hasClass('b-top-menu__item')){
+                    it.addClass('b-top-menu__item_child');
+                }else{
+                    it.addClass('b-sub-top-menu__item_child');
+                } 
+                
                 isSubMenuItem($(temp));
             }
         }
@@ -151,5 +157,53 @@ var moduleContactValidation = (function(){
         form = $(".b-form"),
         name = $(".l-form__input[name='name']"),
         phone = $(".l-form__input[name='phone']"),
-        textarea = $(".b-form__textarea");
+        email = $(".l-form__input[name='email']"),
+        service = $(".l-form__input[name='service']"),
+        textarea = $(".b-form__textarea"),
+        errClass = "l-form__right_err";
+    
+    // метод обозначающий не правильно заполненное поле
+    var _displayErrBorder = function(el){
+        el.addClass(errClass);
+    }
+    
+    var _noneErrBorder = function(el){
+        el.removeClass(errClass);
+    }
+    
+    // метод валидации поля 
+    var _validField = function(field){
+       if(field.val() === "") {
+           _displayErrBorder(field);
+           return false;
+       }else{
+           _noneErrBorder(field);
+           return true;
+       }
+    }
+    
+    
+    
+    return {
+        init: function(){
+           form.on("submit", function(){
+
+               _validField(name);
+               _validField(phone);
+               _validField(email);
+               _validField(service);
+               _validField(textarea);
+               if(!_validField(name) || !_validField(phone) || !_validField(email) || !_validField(service) || !_validField(textarea)){
+                   console.log(false);
+               }else{
+                   console.log(true);
+               }
+               
+               return false;
+           }); 
+        }
+    }
 })();
+
+
+// модуль статики шапки при прокрутке

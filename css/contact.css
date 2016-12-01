@@ -132,9 +132,14 @@
 	    margin: 2% 0;
 	}
 
+
 	.l-form__right textarea{
 		min-height: 229px;
 	}
+        .l-form__right_err{
+            border-color: #c00 !important;
+            background: #FADDD9;
+        }
 	
 	.b-form__marker{ 
 		position: absolute;
