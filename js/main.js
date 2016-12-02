@@ -89,7 +89,7 @@ var moduleMenu = (function(){
     на любую глубину.
     В метод передается JQuery переменная корневого элемента меню
     */
-    var isSubMenuItem = function(menu){
+    var _isSubMenuItem = function(menu){
         var 
         item = menu.children("li"),
         itemQuality = item.length;
@@ -100,14 +100,14 @@ var moduleMenu = (function(){
                 temp = it.children("ul");
             
             if(temp.length != 0){
-                
+//                it.addClass('b-top-menu__item_child');
                 if(it.hasClass('b-top-menu__item')){
                     it.addClass('b-top-menu__item_child');
                 }else{
                     it.addClass('b-sub-top-menu__item_child');
                 } 
                 
-                isSubMenuItem($(temp));
+                _isSubMenuItem($(temp));
             }
         }
     };
@@ -115,7 +115,7 @@ var moduleMenu = (function(){
     return {
         init: function(menu){
             menu.slicknav();
-            isSubMenuItem(menu);
+            _isSubMenuItem(menu);
            
         },
         
