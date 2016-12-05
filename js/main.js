@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 //    sliders
     
     $('.b-top-slider__list').slick({
@@ -43,6 +42,14 @@ $(document).ready(function(){
 //    contact
     moduleContactValidation.init();
 //    end contact
+
+// sidebar menu
+    moduleMenuSidebar.action();
+//end sidebar menu
+
+//fixed head
+//    moduleHeadFixed.action();
+//end fixed head
 });
 
 
@@ -205,5 +212,51 @@ var moduleContactValidation = (function(){
     }
 })();
 
+// модуль фиксации шапки при прокрутке
+/*var moduleHeadFixed = (function(){
+    var fields = {
+        wrapper : ".l-wrapper",
+        head : ".b-header",
+        fix : "b-header_fix"
+    }
 
-// модуль статики шапки при прокрутке
+    var _fixedHead = function(){
+        $(fields.wrapper).on("scroll", function(e){
+            var _this = this;
+            console.log( _this.scrollTop);
+            if( _this.scrollTop > 200){
+                fields.head.addClass(fields.fix);
+            }else{
+                fields.head.removeClass(fields.fix);
+            }
+        })
+    }
+
+    return {
+        action : function(){
+            _fixedHead();
+        }
+    }
+})();*/
+
+
+// модуль раскрытия бокового меню в сайдбаре
+var moduleMenuSidebar = (function(){
+    var fields = {
+      listRootMenu : ".b-sidebar-menu__item", // элемент меню в которм подменю
+      slideToggle : "slow" // режми анимации
+    };
+
+    var _showSubMenu = function(){
+        $(fields.listRootMenu).children('ul').hide();
+        $(fields.listRootMenu).hover(function(){
+            $(this).children('ul:not(:animated)').stop(true,true).slideToggle(fields.slideToggle);
+        });
+    };
+
+    return {
+        action: function(){
+            _showSubMenu();
+        }
+    }
+})();

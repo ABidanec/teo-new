@@ -102,6 +102,10 @@ i{
 	border-top:2px solid #E65100;
 }
 
+    .b-header_fix{
+        position: fixed;
+    }
+
 	.l-top-header{
 		height: 100px;
 		border-bottom: 1px solid #EFEFEF;
@@ -239,13 +243,16 @@ i{
                     color: #fff;
 				}
                      .b-sub-top-menu__item_child:after{
+                        content: "\f054";
                         position: absolute;
                         right: 4px;
                         top: 25%;
 						font-family: "FontAwesome";
+                        font-size: 0.7em;
+                        font-weight: 100;
 						margin: 0 0 0 3px;
-						content: "\f054";
-                         font-size: 100;
+						
+                        
 					}
 
 					.b-sub-top-menu__item:hover,
