@@ -71,6 +71,7 @@
 	}
 
 		.b-sidebar-menu__item{
+            position: relative;
 			list-style: none;
 			border-bottom: 1px solid #fff;
             background: #e65100;
@@ -91,14 +92,14 @@
 					color: #fff;
 					text-decoration: none;
 				}
-					.b-sidebar-menu__link:before{
+					.b-sidebar-menu__link_flag:after{
 						color: #fff;
 					    position: absolute;
 					    font-family: FontAwesome;
-					    content: "\f054";
-					    font-size: 8px;
+					    content: "\f107";
+					    font-size: 1em;
 					    right: 12px;
-					    font-weight: normal;
+					    font-weight: 700;
 					    top: 12px;
 					}
 

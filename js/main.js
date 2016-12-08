@@ -28,7 +28,7 @@ $(document).ready(function(){
 //  end  sliders  
     
 // top menu
-    moduleMenu.init($(".b-top-menu__list"));  
+    moduleMenu.init($(".b-top-menu__list"));
 // end top menu
     
 //    scroll to top
@@ -36,7 +36,7 @@ $(document).ready(function(){
 //    end scroll to top
     
 //    search
-    moduleSearch.init();
+    moduleSearch.action();
 //    end search
 
 //    contact
@@ -47,9 +47,6 @@ $(document).ready(function(){
     moduleMenuSidebar.action();
 //end sidebar menu
 
-//fixed head
-//    moduleHeadFixed.action();
-//end fixed head
 });
 
 
@@ -98,8 +95,8 @@ var moduleMenu = (function(){
     */
     var _isSubMenuItem = function(menu){
         var 
-        item = menu.children("li"),
-        itemQuality = item.length;
+        item = menu.children("li"), // массив дочерних элементов меню
+        itemQuality = item.length; // размер массива
         
         for(var i=0; i<itemQuality; i+=1){
             var 
@@ -121,7 +118,9 @@ var moduleMenu = (function(){
     
     return {
         init: function(menu){
-            menu.slicknav();
+            menu.slicknav({
+                label : "Меню"
+            });
             _isSubMenuItem(menu);
            
         },
@@ -134,22 +133,40 @@ var moduleMenu = (function(){
 модуль открытия/закртытия блока поиска в шапке
 */
 var moduleSearch = (function(){
+
+    var fields = {
+        blockSearch : ".b-search",
+        formSearch : ".b-search__form",
+        close : ".b-search__close",
+        search : ".b-top-search__button"
+    }
+
+    var _methodButtonSearch = function(){
+        $(fields.search).on("click", function(e){
+            e.preventDefault();
+            console.log("click");
+            $(fields.blockSearch).fadeIn(500);
+        });
+    };
+
+    var _methodCloseSearchButton = function(){
+        $(fields.close).on("click", function(e){
+            e.preventDefault();
+            $(fields.blockSearch).fadeOut(500);
+        });
+    };
+
+    var _methodFormSearch = function(){
+        $(fields.formSearch).on("submit", function(){
+            $(fields.blockSearch).fadeOut(500);
+        });
+    };
+
     return{
-        init: function(){
-            
-           $(".b-top-search__button").on("click", function(e){
-                e.preventDefault();
-               $(".b-search").css({"display" : "block"});
-           });
-            
-           $(".b-search__close").on("click", function(e){
-               e.preventDefault();
-               $(".b-search").css({"display" : "none"});
-           });
-           
-           $(".b-search__form").on("submit", function(){
-               $(".b-search").css({"display" : "none"});
-           })
+        action: function(){
+            _methodButtonSearch();
+            _methodCloseSearchButton();
+            _methodFormSearch();
         }
     } 
         
@@ -212,51 +229,45 @@ var moduleContactValidation = (function(){
     }
 })();
 
-// модуль фиксации шапки при прокрутке
-/*var moduleHeadFixed = (function(){
-    var fields = {
-        wrapper : ".l-wrapper",
-        head : ".b-header",
-        fix : "b-header_fix"
-    }
-
-    var _fixedHead = function(){
-        $(fields.wrapper).on("scroll", function(e){
-            var _this = this;
-            console.log( _this.scrollTop);
-            if( _this.scrollTop > 200){
-                fields.head.addClass(fields.fix);
-            }else{
-                fields.head.removeClass(fields.fix);
-            }
-        })
-    }
-
-    return {
-        action : function(){
-            _fixedHead();
-        }
-    }
-})();*/
-
-
-// модуль раскрытия бокового меню в сайдбаре
+// moduleMenuSidebar
+/**
+ * модуль раскрытия бокового меню в сайдбаре
+ */
 var moduleMenuSidebar = (function(){
     var fields = {
-      listRootMenu : ".b-sidebar-menu__item", // элемент меню в которм подменю
+      listRootMenu : ".b-sidebar-menu__list", // корневой элемент меню
+      itemRootMenu : ".b-sidebar-menu__item", // элемент меню в которм подменю
       slideToggle : "slow" // режми анимации
     };
 
+    // при наличии дочернего списка метод открывает и закрывает его
     var _showSubMenu = function(){
-        $(fields.listRootMenu).children('ul').hide();
-        $(fields.listRootMenu).hover(function(){
+        $(fields.itemRootMenu).children('ul').hide();
+        $(fields.itemRootMenu).hover(function(){
             $(this).children('ul:not(:animated)').stop(true,true).slideToggle(fields.slideToggle);
         });
     };
 
+    // отображение маркера при наличии у пункта меню дочернего списка
+    var _markerItem = function(){
+             var arrRootItem = $(fields.listRootMenu).children("li"),
+                 arrQuality = arrRootItem.length;
+
+
+             for(var i = 0; i < arrQuality; i+=1){
+                 var temp = $(arrRootItem[i]),
+                     l = temp.children("ul").length;
+
+                if(l != 0){
+                    temp.addClass("b-sidebar-menu__link_flag");
+                }
+             }
+        };
+
     return {
         action: function(){
             _showSubMenu();
+            _markerItem();
         }
     }
 })();
