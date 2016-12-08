@@ -212,18 +212,19 @@ var moduleContactValidation = (function(){
         init: function(){
            form.on("submit", function(){
 
-               _validField(name);
-               _validField(phone);
-               _validField(email);
-               _validField(service);
-               _validField(textarea);
-               if(!_validField(name) || !_validField(phone) || !_validField(email) || !_validField(service) || !_validField(textarea)){
-                   console.log(false);
+               var flag = false,
+                   nAme = _validField(name),
+                   pHone = _validField(phone),
+                   eMail = _validField(email),
+                   seRvice = _validField(service),
+                   textArea = _validField(textarea);
+
+               if(!nAme || !pHone || !eMail || !seRvice || !textArea){
+                   flag = false;
                }else{
-                   console.log(true);
+                   flag = true;
                }
-               
-               return false;
+               return flag;
            }); 
         }
     }
@@ -252,7 +253,6 @@ var moduleMenuSidebar = (function(){
     var _markerItem = function(){
              var arrRootItem = $(fields.listRootMenu).children("li"),
                  arrQuality = arrRootItem.length;
-
 
              for(var i = 0; i < arrQuality; i+=1){
                  var temp = $(arrRootItem[i]),
