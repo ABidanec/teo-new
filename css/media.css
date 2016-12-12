@@ -12,13 +12,32 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .b-logo,
+    .b-header-slogan,
+    .b-header-contact,
+    .b-header-contact__button,
+    .b-top-search,
+    .b-search{
+        display: block;
+        width: 100%;
+        text-align: center;
+        clear: both;
+    }
+    .b-header-contact__item{
+        width: 46%;
+    }
 
+    .b-top-search{
+        margin: 3%;
+    }
 }
 
 @media only screen and (max-width : 600px) {
     #b-scroll{
-        display: none;
+        right: -99999px;
+
     }
+
 /*header    */
     .b-logo,
     .b-header-slogan,
@@ -39,7 +58,12 @@
     }
     /*slider*/
     .b-top-slider__content{
+        width: 100%;
         margin: 0 0 0 10%;
+    }
+    .b-top-slider__head,
+    .b-top-slider__desc{
+        width: 100%;
     }
     /*end slider*/
 
@@ -95,6 +119,7 @@
         width: 100%;
         text-align: center;
         padding: 0;
+        margin: 0 0 5% 0;
     }
     .b-footer-menu:after{
         content: "";
@@ -111,12 +136,78 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+/*header*/
+    .b-header-contact__item{
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    .b-search__input_text{
+        width: 70%;
+    }
+    .b-search__input_sub{
+        width: 20%;
+    }
+
+    .b-top-slider__content,
+    .b-top-slider__content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*b-features*/
+    .b-features__item{
+        width: 100%;
+        margin: 0 0 7% 0;
+        text-align: center;
+    }
+
+    .b-features__link{
+        display: block;
+        text-align: center;
+    }
+    /*end b-features*/
+
+    /*b-services*/
+    .b-services__item{
+        text-align: center;
+        padding: 0;
+    }
+
+    .b-services__img{
+        margin: 0 0 3% 25%;
+
+        float: none;
+    }
+    /*end b-services*/
+
+    .b-consultation__desc{
+        padding: 0;
+    }
+    .b-consultation__button{
+        position: static;
+    }
+
+    .b-slider-brend__item{
+        width: 100%;
+    }
+/*end header*/
+
+    /*footer*/
+    .b-footer-menu__item{
+        width: 47%;
+    }
+    /*end footer*/
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+    .b-slider-brend__item,
+    .b-product__item{
+        width: 100%;
+    }
 }
 
 

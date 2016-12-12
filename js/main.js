@@ -15,10 +15,21 @@ $(document).ready(function(){
         slidesToShow: 4, // количество отображаемых слайдов
         slidesToScroll: 1, // количетсво проуручеваемых слайдов
         arrows : true, // включение/отключение кнопок навигации
-        responsive : [{
+
+        responsive : [{ // параметры при изменении разрешения
             breakpoint : 600,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                dots : false, // навигация по точкам
+                arrows : false // включение/отключение кнопок навигации
+            }
+        },
+        { // параметры при изменении разрешения
+            breakpoint : 480,
+            settings: {
+                slidesToShow: 1,
+                dots : false, // навигация по точкам
+                arrows : false // включение/отключение кнопок навигации
             }
         }]
     });
@@ -30,10 +41,24 @@ $(document).ready(function(){
         slidesToScroll: 1, // количетсво проуручеваемых слайдов
         dots : true, // навигация по точкам
         arrows : false, // включение/отключение кнопок навигации
-        responsive : [{
+
+        responsive : [{ // параметры при изменении разрешения
             breakpoint : 600,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
+                dots : false // навигация по точкам
+            }
+        },{ // параметры при изменении разрешения
+            breakpoint : 480,
+            settings: {
+                slidesToShow: 2,
+                dots : false // навигация по точкам
+            }
+        },{ // параметры при изменении разрешения
+            breakpoint : 320,
+            settings: {
+                slidesToShow: 1,
+                dots : false // навигация по точкам
             }
         }]
     });
