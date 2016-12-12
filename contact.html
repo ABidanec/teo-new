@@ -27,12 +27,20 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-	<script src="app/bower/modernizr/modernizr.js"></script>
-	<link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/inner.css">
-	<link rel="stylesheet" href="css/contact.css">
+    <script src="app/bower/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="app/bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!--	slider -->
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <!--	end slider -->
+    <!--menu-->
+    <link rel="stylesheet" href="js/slickMenu/slicknav.css">
+    <!--end menu-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css"/>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -73,51 +81,92 @@
                 <div class="l-middle-header clearfix">
                     <nav class="b-top-menu">
                         <ul class="b-top-menu__list">
-                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Компания</a></li>
-                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Каталог</a>
+                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">НВК ТЭО</a></li>
+                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Наша продукция</a>
                                 <ul class="b-sub-top-menu__list">
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Сушилки зерновые</a>
                                         <ul class="b-sub-top-menu__list_child">
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Сушилка зерновая башенная ЗСБ</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Сушилка зерновая шахтная ЗСА</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Сушилка зерновая модульная ЗСМ</a></li>
                                         </ul>
                                     </li>
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория2</a></li>
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория3</a></li>
                                     <li class="b-sub-top-menu__item">
-                                        <a href="" class="b-sub-top-menu__link">Категория4</a>
+                                        <a href="" class="b-sub-top-menu__link">Теплогенераторы</a>
                                         <ul class="b-sub-top-menu__list_child">
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар2</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Твердотопливный теплогенератор ГТУ - 0,5</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Твердотопливный теплогенератор ГТУ - 1,0</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Твердотопливный теплогенератор ГТУ - 2,0</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Твердотопливный теплогенератор ГТУ - 3,0</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Твердотопливный теплогенератор ГТУ - 4,5</a></li>
                                         </ul>
                                     </li>
+                                    <li class="b-sub-top-menu__item">
+                                        <a href="" class="b-sub-top-menu__link">Теплообменники</a>
+                                        <ul class="b-sub-top-menu__list_child">
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 4,2</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 6,9</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 8,3</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 11,1</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 13,9</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 16,7</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Теплообменник "Воздух - Воздух" ТВ - 25,0</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-sub-top-menu__item">
+                                        <a href="" class="b-sub-top-menu__link">Пробоотборники</a>
+                                        <ul class="b-sub-top-menu__list_child">
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Пробоотборник зерновой одноточечный ПЭЗК</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-sub-top-menu__item">
+                                        <a href="" class="b-sub-top-menu__link">Щипорезы</a>
+                                        <ul class="b-sub-top-menu__list_child">
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Щипорез Щ - 1</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Щипорез Щ - 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-sub-top-menu__item">
+                                        <a href="" class="b-sub-top-menu__link">Транспортеры</a>
+                                        <ul class="b-sub-top-menu__list_child">
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Транспортер скребковый</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Транспортер ленточный</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Зерновые нории</a></li>
                                 </ul>
                             </li>
                             <li class="b-top-menu__item">
                                 <a href="/" class="b-top-menu__link">Услуги</a>
                                 <ul class="b-sub-top-menu__list">
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория1</a>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Строительство ЗАВ</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Строительство КЗС</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Строительство завальных ям</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Поднятие ЗАВ</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Реконструкция ЗАВ</a></li>
+                                    <li class="b-sub-top-menu__item">
+                                        <a href="" class="b-sub-top-menu__link">Ремонт зерносепараторов БЦС</a>
                                         <ul class="b-sub-top-menu__list_child">
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар1</a></li>
-                                            <li class="b-sub-top-menu__item">
-                                                <a href="" class="b-sub-top-menu__link_child">Товар2</a>
-                                            </li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар3</a></li>
-                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Товар4</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Капитальный ремонт</a></li>
+                                            <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Поточный ремонт</a></li>
                                         </ul>
                                     </li>
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория2</a></li>
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория3</a></li>
-                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Категория4</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Строительство элеваторов</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Строительство зернохранилищ</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Монтаж сушилок зерновых</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link">Монтаж зерноочистительного оборудования</a></li>
                                 </ul>
                             </li>
-                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Курсы</a></li>
-                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Проекты</a></li>
-                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Информация</a></li>
+                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Новости</a></li>
+                            <li class="b-top-menu__item">
+                                <a href="/" class="b-top-menu__link">Проекты</a>
+                                <ul class="b-sub-top-menu__list">
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Переоборудование зерносушилки ДСП - 50 (г. Глобино)</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Строительство ЗАВа (п. Семеновка)</a></li>
+                                    <li class="b-sub-top-menu__item"><a href="" class="b-sub-top-menu__link_child">Переоборудование зерносушилки ДСП - 50 (п. Александровка)</a></li>
+                                </ul>
+                            </li>
+                            <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Партнеры</a></li>
                             <li class="b-top-menu__item"><a href="/" class="b-top-menu__link">Контакты</a></li>
                         </ul>
                     </nav>
@@ -315,14 +364,10 @@
 		<i class="b-scroll__text">e</i>
 	</div>
 	<!-- b-scroll -->
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="app/bower/jquery/jquery.js"><\/script>')
-</script>
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/slick/slick.js"></script>
-<script src="js/slickMenu/jquery.slicknav.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/main.js"></script>
+    <!-- JS -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script src="js/slickMenu/jquery.slicknav.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

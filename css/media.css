@@ -214,3 +214,62 @@
 @media only screen and (max-width : 240px) {
 
 }
+
+/* responsive slickMenu style */
+@media screen and (max-width: 40em) {
+
+    .js .slicknav_btn{
+        background: #FF8A39;
+        float: none;
+        margin: 0 auto;
+    }
+    .js .slicknav_menu .slicknav_menutxt{
+        float: none;
+    }
+
+    .js .slicknav_menu .slicknav_icon{
+        float: right;
+        margin: -0.88em 0 0 0.438em
+    }
+
+    .js .b-top-menu__list {
+        display:none;
+
+    }
+
+    .js .slicknav_menu {
+        display:block;
+        background: #e65100;
+    }
+    .js .b-top-menu__item,
+    .js .b-sub-top-menu__item{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border-top: 1px solid #FF8A39;
+        border-right: none;
+    }
+
+    .js .b-sub-top-menu__list,
+    .js .b-sub-top-menu__list_child{
+        position: relative;
+        display: block;
+        left: 0;
+        width: 100%;
+        overflow-y: visible;
+        margin: 0;
+    }
+
+    .js .b-sub-top-menu__item:hover ul{
+        margin: 0;
+        width: 100%;
+    }
+
+    .b-sub-top-menu__link,
+    .b-sub-top-menu__link_child{
+        border: none;
+    }
+}
+
+/*end responsive slickMenu style*/
