@@ -14,7 +14,13 @@ $(document).ready(function(){
         dots : true, // навигация по точкам
         slidesToShow: 4, // количество отображаемых слайдов
         slidesToScroll: 1, // количетсво проуручеваемых слайдов
-         arrows : true // включение/отключение кнопок навигации
+        arrows : true, // включение/отключение кнопок навигации
+        responsive : [{
+            breakpoint : 600,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
     });
     
     $('.b-slider-brend__list').slick({
@@ -23,7 +29,13 @@ $(document).ready(function(){
         slidesToShow: 5, // количество отображаемых слайдов
         slidesToScroll: 1, // количетсво проуручеваемых слайдов
         dots : true, // навигация по точкам
-        arrows : false // включение/отключение кнопок навигации
+        arrows : false, // включение/отключение кнопок навигации
+        responsive : [{
+            breakpoint : 600,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
     });
 //  end  sliders  
     

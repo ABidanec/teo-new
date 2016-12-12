@@ -102,10 +102,6 @@ i{
 	border-top:2px solid #E65100;
 }
 
-    .b-header_fix{
-        position: fixed;
-    }
-
 	.l-top-header{
 		height: 100px;
 		border-bottom: 1px solid #EFEFEF;
@@ -113,19 +109,20 @@ i{
 		
 		.b-logo{
 			float: left;
-			width:200px;
+			width:20%;
 		}
 
 		.b-header-slogan{
 			margin: 20px 0 0 0;
 			float: left;
-			width: 300px;
+			width: 30%;
 			text-align: center;
 		}
 
 		.b-header-contact{
 			float: left;
 			margin: 20px 0 0 0;
+            width: 37%;
 		}
 			.b-header-contact__list{
 				list-style: none;
@@ -181,6 +178,7 @@ i{
 			.b-header-contact__button{
 				float: left;
 				margin: 28px 0 0 0;
+                width: 13%;
 			}
 	
 	.l-middle-header{
