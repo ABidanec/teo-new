@@ -226,9 +226,13 @@ i{
 			}
 	
 	.l-middle-header{
+        position: relative;
 		height: 51px;
 	}
 /*top-menu*/
+.b-top-menu{
+    width:100%;
+}
 		.b-top-menu__list{
 			list-style: none;
 			padding: 0;
@@ -333,7 +337,9 @@ i{
 
 /*search*/
 		.b-top-search{
-			float: right;
+            float: right;
+            /*position: absolute;*/
+            /*right: 0;*/
 		}
 			.b-top-search__button{
 				text-decoration: none;
@@ -341,7 +347,7 @@ i{
 				height: 50px;
 				font-size: 20px;
 				color: #000;
-				padding: 7px 70px;
+				padding: 2% 5%;
 				border-radius: 3px;
 			}
 				.b-top-search__button:after{
@@ -590,7 +596,7 @@ i{
 
 		.b-services__item_2{
 			min-height: 150px;
-			width: 43%;
+			width: 42%;
 			margin: 0 20px 0 0;
 			padding: 16px 14px 19px;
 			border: 1px solid #fff;

@@ -5,13 +5,42 @@
 
 }
 
+@media only screen and (max-width : 1060px) {
+
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .b-top-search{
+        display: block;
+        width: 100%;
+        text-align: center;
+        clear: both;
+        margin: 2% 0;
+    }
 
+    /*catalog*/
+    .b-services__item_2{
+        width: 95%;
+    }
+        .b-services__img{
+            float: left;
+            margin: 0 2% 2% 0;
+        }
+    /*end catalog*/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+    #b-scroll{
+        right: -99999px;
+
+    }
+
+    body{
+      background: #FEFECC;
+    }
     .b-logo,
     .b-header-slogan,
     .b-header-contact,
@@ -23,6 +52,17 @@
         text-align: center;
         clear: both;
     }
+    .b-logo__img{
+        margin: 0.5% 0;
+        border: 1px solid #e65100;
+    }
+    .b-header-contact,
+    .b-header-slogan{
+        border: 1px solid #e65100;
+        padding: 0 0 1% 0;
+    }
+
+
     .b-header-contact__item{
         width: 46%;
     }
@@ -30,8 +70,9 @@
          text-align: left;
      }
     .b-top-search{
-        margin: 3%;
+        margin: 2% 0;
     }
+
 
     /*inner*/
     .b-page-head,
@@ -55,7 +96,7 @@
         width: 90%;
     }
     .l-form__left,
-    .l-form__right
+    .l-form__right,
     .l-form__label{
         width: 100%;
     }
@@ -65,6 +106,33 @@
         top: 50%;
     }
     /*end inner*/
+
+    /*catalog*/
+    .b-services__item_2{
+        width: 95%;
+        margin: 0 0 2% 0;
+    }
+    /*end catalog*/
+
+    /*footer*/
+    .b-copyright,
+    .b-footer-menu,
+    .b-footer-contact{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 5% 0;
+    }
+    .b-footer-menu:after{
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+    .b-footer-social__list{
+        margin: 0 0 0 20%;
+    }
+    /* end footer*/
 }
 
 @media only screen and (max-width : 600px) {
@@ -85,12 +153,15 @@
         text-align: center;
         clear: both;
     }
+
+    .b-header-contact{
+        border: 1px solid #e65100;
+    }
+
     .b-header-contact__item{
         width: 46%;
     }
-    .b-top-search{
-        margin: 5px;
-    }
+
     /*slider*/
     .b-top-slider__content{
         width: 100%;
@@ -279,7 +350,7 @@
 }
 
 /* responsive slickMenu style */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 920px) {
 
     .js .slicknav_btn{
         background: #FF8A39;
