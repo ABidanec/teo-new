@@ -1303,7 +1303,8 @@ i{
 }
 .b-contact__marker{
     display: block;
-    position: absolute;
+    float: left;
+    position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1344,7 +1345,7 @@ i{
 
 .b-contact__text{
     float: right;
-    width: 80%;
+    width: 70%;
 }
 .b-contact__text h4{
     color: #222;

@@ -26,10 +26,45 @@
     .b-header-contact__item{
         width: 46%;
     }
-
+     .b-header-contact__link{
+         text-align: left;
+     }
     .b-top-search{
         margin: 3%;
     }
+
+    /*inner*/
+    .b-page-head,
+    .b-contact__slogan{
+        text-align: center;
+    }
+
+    .b-sidebar,
+    .b-content,
+    .b-contact__left,
+    .b-contact__right{
+        display: block;
+        width: 100%;
+    }
+
+    .b-contact__text{
+        float: left;
+        margin: 0 0 0 2%;
+    }
+    #map{
+        width: 90%;
+    }
+    .l-form__left,
+    .l-form__right
+    .l-form__label{
+        width: 100%;
+    }
+
+    .b-form__marker{
+        right: 7%;
+        top: 50%;
+    }
+    /*end inner*/
 }
 
 @media only screen and (max-width : 600px) {
@@ -131,6 +166,29 @@
        margin: 0 0 0 20%;
     }
 /* end footer*/
+
+/*inner*/
+    .b-page-head,
+    .b-contact__slogan{
+        text-align: center;
+    }
+
+    .b-sidebar,
+    .b-content,
+    .b-contact__left,
+    .b-contact__right{
+        display: block;
+        width: 100%;
+    }
+    #map{
+       width: 90%;
+    }
+    .l-form__left,
+    .l-form__right,
+    .l-form__label{
+        width: 100%;
+    }
+/*end inner*/
 }
 
 /* Extra Small Devices, Phones */
@@ -192,6 +250,7 @@
     .b-slider-brend__item{
         width: 100%;
     }
+
 /*end header*/
 
     /*footer*/
@@ -206,6 +265,10 @@
 @media only screen and (max-width : 320px) {
     .b-slider-brend__item,
     .b-product__item{
+        width: 100%;
+    }
+
+    .b-slider-brend__img{
         width: 100%;
     }
 }

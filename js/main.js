@@ -17,7 +17,7 @@ $(document).ready(function(){
         arrows : true, // включение/отключение кнопок навигации
 
         responsive : [{ // параметры при изменении разрешения
-            breakpoint : 600,
+            breakpoint : 601,
             settings: {
                 slidesToShow: 2,
                 dots : false, // навигация по точкам
@@ -25,7 +25,7 @@ $(document).ready(function(){
             }
         },
         { // параметры при изменении разрешения
-            breakpoint : 480,
+            breakpoint : 481,
             settings: {
                 slidesToShow: 1,
                 dots : false, // навигация по точкам
@@ -43,21 +43,21 @@ $(document).ready(function(){
         arrows : false, // включение/отключение кнопок навигации
 
         responsive : [{ // параметры при изменении разрешения
-            breakpoint : 600,
+            breakpoint : 601,
             settings: {
                 slidesToShow: 3,
                 dots : false // навигация по точкам
             }
         },{ // параметры при изменении разрешения
-            breakpoint : 480,
+            breakpoint : 481,
             settings: {
                 slidesToShow: 2,
                 dots : false // навигация по точкам
             }
         },{ // параметры при изменении разрешения
-            breakpoint : 320,
+            breakpoint : 321,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 dots : false // навигация по точкам
             }
         }]
