@@ -174,7 +174,7 @@ i{
 				.b-header-contact__item{
 					float: left;
 					position: relative;
-					margin: 0 10px 0 0;
+					margin: 0 10px 10px 0;
 				}
 				
 				.b-header-contact__email,
@@ -532,9 +532,9 @@ i{
 			position: relative;
 			list-style: none;
 			float: left;
-			width:17%;
-			padding: 0 0 0 45px;
-			margin: 0 34px 0 0;
+			width:15%;
+			padding: 0 0 0 5%;
+			margin: 0 5% 0 0;
 		}
 			.b-features__link{
 				text-decoration: none;
