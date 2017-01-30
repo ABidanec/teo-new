@@ -38,9 +38,7 @@
 
     }
 
-    body{
-      background: #FEFECC;
-    }
+
     .b-logo,
     .b-header-slogan,
     .b-header-contact,
@@ -54,7 +52,6 @@
     }
     .b-logo__img{
         margin: 0.5% 0;
-        border: 1px solid #e65100;
     }
     .b-header-contact,
     .b-header-slogan{
@@ -113,6 +110,22 @@
         margin: 0 0 2% 0;
     }
     /*end catalog*/
+
+    /*b-services*/
+
+    .b-company,
+    .b-news,
+    .b-services__item_3{
+        width: 100%;
+    }
+
+    /*end b-services*/
+
+    /*b-features*/
+    .b-features__ico{
+        left: -10px;
+    }
+    /*end b-features*/
 
     /*footer*/
     .b-copyright,
@@ -180,6 +193,10 @@
         margin: 0 4% 4% 0;
         width: 37%;
     }
+
+    .b-features__ico{
+        left: -20px;
+    }
 /*end b-features*/
 
 /*b-services*/
@@ -207,10 +224,6 @@
         margin: 0 2% 2% 0;
     }
 
-    .b-company,
-    .b-news{
-        width: 100%;
-    }
 /*end b-services*/
 
 /*b-product*/

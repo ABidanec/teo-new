@@ -17,6 +17,14 @@ $(document).ready(function(){
         arrows : true, // включение/отключение кнопок навигации
 
         responsive : [{ // параметры при изменении разрешения
+            breakpoint : 769,
+            settings: {
+                slidesToShow: 3,
+                dots : false, // навигация по точкам
+                arrows : false // включение/отключение кнопок навигации
+            }
+        },
+        { // параметры при изменении разрешения
             breakpoint : 601,
             settings: {
                 slidesToShow: 2,

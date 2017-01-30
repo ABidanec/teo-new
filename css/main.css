@@ -154,14 +154,21 @@ i{
 		.b-logo{
 			float: left;
 			width:20%;
+			margin: 0.5% 0 0 0;
 		}
 
 		.b-header-slogan{
 			margin: 20px 0 0 0;
 			float: left;
-			width: 30%;
+			width: 27%;
 			text-align: center;
+            padding: 0 0 0 2%;
 		}
+            .b-header-slogan p{
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.2em;
+            }
 
 		.b-header-contact{
 			float: left;
@@ -434,19 +441,27 @@ i{
     height: 400px;
 }
 .b-top-slider__item_1{
-    background: url("../pic/slider/slid1.jpg");
+    background: url("../pic/slider/zsbp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .b-top-slider__item_2{
-    background: url("../pic/slider/slid2.jpg");
+    background: url("../pic/slider/tverdotoplivnyj-teplogenerator-GTU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .b-top-slider__item_3{
-    background: url("../pic/slider/slid3.jpg");
+    background: url("../pic/slider/TV.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .b-top-slider__item_4{
-    background: url("../pic/slider/slid3.jpg");
+    background: url("../pic/slider/probootbornik-zerna-PEZK.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .b-top-slider__head,
@@ -587,6 +602,7 @@ i{
 			/*for ie7*/
         	*display: inline;
 			vertical-align: top;
+			text-align: center;
 		}
 
 		.b-services__item_3{
@@ -615,7 +631,7 @@ i{
 
 			.b-services__img{
 				display: block;
-				margin: 0 0 10px 0;
+				margin: 0 0 4% 15%;
 			}
 
 
